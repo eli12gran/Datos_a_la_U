@@ -10,7 +10,7 @@ Con el fin de facilitar las conclusiones que salen del Análisis Exploratorio de
     * El aumento de los costos de producción, como fertilizantes, pesticidas, semillas y combustible, erosiona los márgenes de ganancia de los agricultores, dificultando así su viabilidad económica.
     * Disminución de la producción: Ante la escalada de costos, muchos productores se ven obligados a reducir sus áreas de cultivo o a utilizar menos insumos, lo que inevitablemente conduce a una disminución en la producción total.
     * En los casos más extremos, el aumento sostenido de los costos puede llevar a que muchos productores abandonen la actividad agrícola, lo que a su vez puede generar un envejecimiento de la población rural y una pérdida de conocimiento tradicional.
-  
+
 
 ---
 
