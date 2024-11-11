@@ -20,6 +20,34 @@ Para lograr este acometido se hará uso de las bases de datos que provee el conc
 ---
 ## **Requerimientos Tecnológicos**
 
+Para garantizar la replicabilidad del proyecto, a continuación, se describen los recursos tecnológicos necesarios para ejecutar el código, escrito en Python, y las librerías empleadas en el desarrollo de cada paso documentado. Documentamos en esta parte los paquetes requeridos con las versiones que se usaron de cada uno de ellos. Recomendamos realizar un update de las librerías y de Python cuando se realice la clonación del repositorio con el fin de evitar problemas de versiones y todo el programa pueda correr de forma correcta.
+
+* Versión de Python: `3.9.8` o superior 
+
+* Paquetes requeridos:
+	* `Pandas` (versión `2.1.4` o superior)
+	* `numpy` (versión `1.25.0` o superior)
+	* `matplotlib`(versión `3.4.3` o superior)
+	* `seaborn` (versión `0.13.2` o superior)
+	* `plotly` (versión `5.18.1` o superior)
+	* `sklearn` (versión `1.5.2` o superior)
+
+En caso de que se desee hacer la instalación de un paquete individual porque no cuenta con él en su máquina local, puede hacerlo utilizando `pip` de la siguiente forma:
+
+```
+pip install package_name
+```
+
+Y si desea instalar el programa con una versión específica:
+
+```
+pip install package_name==0.0.0
+```
+
+Donde el `0.0.0` será la versión que desee.
+
+El paquete por excelencia para realizar estudios con herramientas de Machine Learning es el último mencionado en el listado anterior, es decir, `scikit-learn`. Con este paquete se lleva a cabo toda la creación e implementación del modelo, desde el preprocesamiento de los datos hasta la creación de nuevas columnas mediante *feature engineering*. `scikit-learn` incluye módulos para realizar Machine Learning supervisado y no supervisado, proporcionando todos los modelos necesarios para abordar problemas de regresión o clasificación, según lo requiera el proyecto.
+
 ---
 ## **Metodología**
 
@@ -33,7 +61,7 @@ Las bases de datos fueron seleccionadas después de haber hecho una búsqueda ex
 - [Balance social 2023](http://hdl.handle.net/20.500.12324/39036)
 - [OECD (2022), Rural Policy Review of Colombia 2022](https://doi.org/10.1787/c26abeb4-en)
 
-  ### 2. Análisis Exploratorio de los Datos (EDA)
+### 2. Análisis Exploratorio de los Datos (EDA)
 
 Antes de realizar cualquier modelo de predicción o de tomar cualquier decisión crucial sobre qué hacer en el modelo, cómo implementarlo, qué modelo utilizar, etc, se debe hacer lo que se conoce como **Análisis Exploratorio de Datos**, más conocido como EDA (Exploratory Data Analysis) el cual es una fase crucial en cualquier proyecto de ciencia de datos o análisis, ya que establece una comprensión profunda y estructurada del conjunto de datos. Esta parte es esencial para saber qué información está disponible y cómo puede utilizarse. Permite identificar valores atípicos, datos faltantes o errores en los datos, como inconsistencias o duplicados, que pueden sesgar los resultados y afectar el rendimiento de los modelos. Al identificar estos problemas, se pueden realizar las correcciones necesarias antes de avanzar. Una de las razones más importantes por las cuales el EDA debe hacerse con minuciosidad es que acá se pueden explorar relaciones entre variables y se pueden detectar patrones interesantes, como correlaciones entre variables, que podrían ser útiles para el modelo predictivo o análisis, lo que por ende **ayuda a verificar o refutar hipótesis iniciales y a plantear nuevas hipótesis**. 
 
