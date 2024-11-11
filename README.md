@@ -1,4 +1,4 @@
 # **Cultivando Conexiones: Estudio Integrado de las Dinámicas del Panorama Agrícola en Colombia**
 
 
-![Logos](logos_github.jpg)
+![Logos](Datos_a_la_U/logos_github.jpg)
