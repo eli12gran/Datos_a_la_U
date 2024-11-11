@@ -61,39 +61,30 @@ Las bases de datos fueron seleccionadas después de haber hecho una búsqueda ex
 - [Balance social 2023](http://hdl.handle.net/20.500.12324/39036)
 - [OECD (2022), Rural Policy Review of Colombia 2022](https://doi.org/10.1787/c26abeb4-en)
 
+
 ### 2. Análisis Exploratorio de los Datos (EDA)
 
 Antes de realizar cualquier modelo de predicción o de tomar cualquier decisión crucial sobre qué hacer en el modelo, cómo implementarlo, qué modelo utilizar, etc, se debe hacer lo que se conoce como **Análisis Exploratorio de Datos**, más conocido como EDA (Exploratory Data Analysis) el cual es una fase crucial en cualquier proyecto de ciencia de datos o análisis, ya que establece una comprensión profunda y estructurada del conjunto de datos. Esta parte es esencial para saber qué información está disponible y cómo puede utilizarse. Permite identificar valores atípicos, datos faltantes o errores en los datos, como inconsistencias o duplicados, que pueden sesgar los resultados y afectar el rendimiento de los modelos. Al identificar estos problemas, se pueden realizar las correcciones necesarias antes de avanzar. Una de las razones más importantes por las cuales el EDA debe hacerse con minuciosidad es que acá se pueden explorar relaciones entre variables y se pueden detectar patrones interesantes, como correlaciones entre variables, que podrían ser útiles para el modelo predictivo o análisis, lo que por ende **ayuda a verificar o refutar hipótesis iniciales y a plantear nuevas hipótesis**. 
 
-La parte del EDA es para las creadoras de la idea, la parte más importante de todas. Es por eso que para las 7 bases de datos que se han usado hasta el momento, se han realizado EDA´s individuales que recorren casi la totalidad de las columnas de cada dataset y se detallan las relaciones entre variables e identificación de diversos patrones que pueden ser útiles para la creación de nuevas features que llevarán a una buena implementación del modelo.
+La parte del EDA es para las creadoras de la idea, la parte más importante de todas. Es por eso que para las 7 bases de datos que se han usado hasta el momento, se han realizado EDAs individuales que recorren casi la totalidad de las columnas de cada dataset y se detallan las relaciones entre variables e identificación de diversos patrones que pueden ser útiles para la creación de nuevas features que llevarán a una buena implementación de los modelos.
+
+El desarrollo detallado para cada uno de los conjuntos de datos se encuentra en la carpeta [`EDAs`](https://github.com/eli12gran/Datos_a_la_U/tree/main/EDAs) de este repositorio. Allí se encuentran los archivos donde se hizo la lectura y visualizaciones pertinentes de los datos, además de que se brinda la opción de poder ir a los gráficos interactivos.
 
 ### 3. Resultados y conclusiones de los EDAs
 
+Después de haber realizado un análisis profundo y completo de los conjuntos de datos, se seleccionaron, de acuerdo a las visualizaciones y demás información descriptiva, los puntos más relevantes de acuerdo con los temas que se pretenden abordar con el proyecto y de esta forma resumir los resultados y conclusiones más relevantes en el documento `ConclusionesEDA.md`, también dentro de la misma carpeta.
 
 ### 4. Elección de los Modelos de Machine Learning
 
-Con el fin de encontrar los patrones y las tendencias ocultas que creemos están en las bases de datos y en la relación de unas con otras, decidimos entonces llevar a cabo la implementación de modelos de machine learning que nos permitan relacionar las bases de datos entre sí. 
+Con el fin de encontrar los patrones y las tendencias ocultas que creemos están en las bases de datos y en la relación de unas con otras, decidimos entonces llevar a cabo la implementación de modelos de Machine Learning que nos permitan relacionar las bases de datos entre sí. 
 
-Existe una percepción errónea común por parte de algunos miembros de las comunidades de machine learning de que los modelos pueden explicar completamente un fenómeno sin la necesidad de un profundo conocimiento del contexto. En este punto es importante recordar que el machine learning es un *aprendizaje de máquina*, que no conoce de contextos sociales, políticos, culturales o económicos, y que, al ser humanos como somos, son los aspectos que conforman y erigen el mundo que nos rodea.
-
+Existe una percepción errónea común por parte de algunos miembros de las comunidades de machine learning de que los modelos pueden explicar completamente un fenómeno sin la necesidad de un profundo conocimiento del contexto. En este punto es importante recordar que Machine Learning es un *aprendizaje de máquina*, que no conoce de contextos sociales, políticos, culturales o económicos, y que, al ser humanos como somos, son los aspectos que conforman y erigen el mundo que nos rodea.
 
 ### 5. Interpretación de los Modelos de Machine Learning
 
 ### 6. Integración de los EDAs y los Modelos
 
-Con el fin de encontrar los patrones y las tendencias ocultas que creemos están en las bases de datos y en la relación de unas con otras, decidimos entonces llevar a cabo la implementación de modelos de machine learning que nos permitan relacionar las bases de datos entre sí. 
-
-Existe una percepción errónea común por parte de algunos miembros de las comunidades de machine learning de que los modelos pueden explicar completamente un fenómeno sin la necesidad de un profundo conocimiento del contexto. En este punto es importante recordar que el machine learning es un *aprendizaje de máquina*, que no conoce de contextos sociales, políticos, culturales o económicos, y que, al ser humanos como somos, son los aspectos que conforman y erigen el mundo que nos rodea.
-
 ---
-
-### **Construcción del EDA**
-
-Para la construcción de alkjdaksjdklsadj
-
-
-## **Fuentes de Información**
-
 ## Alcance del proyecto y futuras oportunidades
 
 El mundo de los datos no tiene límites, y esperamos que con este proyecto sea posible abrir el camino para muchas otras propuestas que complementen desde diferentes frentes el objetivo general que comprende aportar al crecimiento del sector agrícola en Colombia. 
