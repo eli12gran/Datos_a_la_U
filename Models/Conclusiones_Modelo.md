@@ -55,7 +55,7 @@ Por otro lado, tanto Random Forest como AdaBoost mostraron un rendimiento signif
 
 Es importante aclarar de nuevo que este modelo de ML que se realizó se limitó **a un grupo pequeño del sector agricultor**, el sector que tiene información sobre los cultivos. Si observamos la siguiente gráfica, vemos que la mayoría de exportaciones no tenían asignado ningún tipo de cultivo ya que este resto de procutos no tenían una categoría en el dataset de *Evaluaciones Agropecuarias Municipales – EVA. 2019 - 2023. Base Agrícola*.
 
-[Exportaciones Tipo Cultivo](../exportaciones_tipo_cultivo.jpg)
+![Exportaciones Tipo Cultivo](../exportaciones_tipo_cultivo.jpg)
 
 
 La categoría con mayor cantidad de datos en la base de exportaciones, después de `No asignado`, es `Cultivos tropicales tradicionales`. Esta proporción indica que la asignación de `tipo_cultivo` en las exportaciones refleja adecuadamente la importancia de estos cultivos. Gracias a los buenos resultados de los puntajes (scores) obtenidos en los modelos, **podemos afirmar que estamos prediciendo correctamente la proporción de exportaciones entre los siete tipos de cultivo registrados en la otra base de datos**. Además, si observamos el análisis exploratorio de datos (EDA) que se realizó para esa base base de datos, vemos que se muestra que estos tipos de cultivos son predominantes en las distintas regiones del país, lo que sugiere que la generalización lograda en los modelos se aproxima bien a la realidad del sector agrícola en el país.
