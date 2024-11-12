@@ -1,4 +1,5 @@
-Para referirse a las gráficas puede dirigirse al archivo `EDA_creditos.ipynb` dentro de esta misma carpeta o dirigirse de forma directa a las gráficas interactivas en [este link](https://colab.research.google.com/drive/1mJX86M3abFwuZLckPq2kZDF0SDPAnPQJ?usp=sharing)
+### **Nota importante**:
+Dado que Github posee un límite del tamaño de archivos que se pueden subir y el notebook para este desarrollo lo supera, es necesario que, si desea dirigirse al código y/o las gráficas (ya sea interactivas o estáticas) lo haga a través de [este link](https://colab.research.google.com/drive/1mJX86M3abFwuZLckPq2kZDF0SDPAnPQJ?usp=sharing) a Google Colab.
 
 - En esta base de datos se identificó que los departamentos con mayor colocación son Bogotá DC, Antioquia, Valle del Cauca y Cundinamarca, los cuales, haciendo un análisis integral con los demás conjuntos de datos, coincide con los departamentos con mayor producción (por toneladas) del país.
 
