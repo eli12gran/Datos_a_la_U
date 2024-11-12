@@ -46,7 +46,7 @@ R² para AdaBoost en el conjunto de prueba: 0.8006
 ```
 De una forma más visual:
 
-![Métricas del Modelo](../metricas_modelo_1.jpg)
+![Métricas del Modelo](../images/metricas_modelo_1.jpg)
 
 Los resultados obtenidos respaldan nuestra hipótesis de que las técnicas de machine learning son necesarias para modelar de manera efectiva el impacto de los precios de los insumos agrícolas en las exportaciones de cultivos. La regresión lineal tradicional no fue capaz de capturar ni siquiera en un porcentaje mínimo las relaciones complejas y no lineales entre las variables, lo que llevó a un desempeño deficiente en comparación con los modelos más sofisticados.
 
