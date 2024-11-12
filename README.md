@@ -128,6 +128,9 @@ Nuestro análisis exploratorio detallado, en conjunto con la implementación de 
 - **Patrones de Producción por Cultivos:** En el análisis de la producción agrícola por departamentos, observamos un desequilibrio en la diversificación y especialización de ciertos cultivos, lo cual puede afectar la seguridad alimentaria y la autosuficiencia de la región. Identificamos tendencias de cambio en la producción que sugieren la necesidad de promover cultivos estratégicos que optimicen los recursos naturales disponibles en cada región.
 
 ---
+
+### [Link Presentación segunda fase](https://www.canva.com/design/DAGWQ-knmEo/wVex-K9IheBl7Qau1RpYkQ/view?utm_content=DAGWQ-knmEo&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+
 ## Alcance del proyecto y futuras oportunidades
 Este proyecto aporta un impacto social positivo en varios niveles. Primero, al optimizar las políticas de importación y exportación, apoyamos la estabilidad económica y la sostenibilidad del sector agrícola. En segundo lugar, la implementación de políticas de financiamiento inclusivo en áreas de postconflicto puede transformar vidas, brindando más oportunidades para agricultores en regiones históricamente desfavorecidas. Además, el impulso a la diversificación de especies nativas en plantaciones forestales contribuye a la conservación de la biodiversidad y a la sostenibilidad ambiental.
 Por último, al utilizar técnicas de machine learning avanzadas, hemos logrado hacer predicciones sobre la disponibilidad de créditos y el costo de insumos, proporcionando a los actores del sector agrícola las herramientas para tomar decisiones informadas y reducir riesgos. En conjunto, este proyecto no solo busca resolver problemas inmediatos, sino construir un sector agrícola y forestal más resiliente y sostenible para el futuro.
