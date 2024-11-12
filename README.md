@@ -51,6 +51,26 @@ El paquete por excelencia para realizar estudios con herramientas de Machine Lea
 
 Todos los códigos presentes están escritos en el lenguaje de programación Python y se encuentran en formato de notebooks, (fueron desarrollados en Jupyter-Notebooks) específicamente en archivos con extensión .ipynb. Esto permite al usuario descargar los notebooks y ejecutarlos en diferentes entornos, como Jupyter Notebooks o Google Colab, que también son compatibles con este formato.
 
+Si usted desea replicar los códigos y todo lo que se hizo en su maquina local, debe clonar este repositorio en la misma con el comando 
+
+```
+git clone https://github.com/eli12gran/Datos_a_la_U.git
+```
+
+Al hacer esto usted bajará toda la información acá dispuesta. Sin embargo le recordamos que para poder correr todos los códigos y que funcionen de forma correcta **debe contar con todas las bases de datos que se usaron en todos los Jupyter-Notebooks acá presentes**. Por lo que para este paso debe dirigirse al link de drive que se encuentra en el documento [`Datasets.md`](https://github.com/eli12gran/Datos_a_la_U/blob/main/Datasets.md) y descargarlas todas.
+
+Sin embargo, este paso no es completamente necesario para correr los códigos acá especificados: usted puede acceder a ellos en línea con los links de Google Colab que se proveen al inicio de cada uno de los notebooks, bajar la base de datos y correr los códigos si lo desea.
+
+---
+## **Estructura del repositorio**
+
+Encontrará 2 carpetas principales con las fases que se llevaron a cabo para el desarrollo de todo el proyecto y están explicadas en la siguiente sección de *Metodología*.
+
+La primera carpeta para el desarrollo es `EDAs`, la cual contiene el estudio inicial de todas las bases de datos, además de las conclusiones y hallazgos más relevantes de todo este proceso.
+
+La segunda carpeta es `Models`, donde se encuentra la implementación de los modelos de Machine Learning para los conjuntos de datos, además de visualizaciones pertinentes para cada uno y por último las conclusiones que se obtuvieron. Dentro de cada archivo la narrativa permite un flujo de trabajo coherente que se puede seguir paso a paso.
+
+Adicionalmente, en este archivo principal está toda la información general relacionada con el proyecto y los puntos más importantes del mismo.
 
 ---
 ## **Metodología**
@@ -76,25 +96,38 @@ El desarrollo detallado para cada uno de los conjuntos de datos se encuentra en 
 
 ### 3. Resultados y conclusiones de los EDAs
 
-Después de haber realizado un análisis profundo y completo de los conjuntos de datos, se seleccionaron, de acuerdo a las visualizaciones y demás información descriptiva, los puntos más relevantes de acuerdo con los temas que se pretenden abordar con el proyecto y de esta forma resumir los resultados y conclusiones más relevantes en el documento `ConclusionesEDA.md`, también dentro de la misma carpeta.
+Después de haber realizado un análisis profundo y completo de los conjuntos de datos, se seleccionaron, de acuerdo a las visualizaciones y demás información descriptiva, los puntos más relevantes de acuerdo con los temas que se pretenden abordar con el proyecto y de esta forma resumir los resultados y conclusiones más relevantes en los documentos `Conclusiones`, también dentro de la misma carpeta.
 
-### 4. Elección de los Modelos de Machine Learning
+### 4. Implementación de los Modelos de Machine Learning
 
 Con el fin de encontrar los patrones y las tendencias ocultas que creemos están en las bases de datos y en la relación de unas con otras, decidimos entonces llevar a cabo la implementación de modelos de Machine Learning que nos permitan relacionar las bases de datos entre sí. 
 
 Existe una percepción errónea común por parte de algunos miembros de las comunidades de machine learning de que los modelos pueden explicar completamente un fenómeno sin la necesidad de un profundo conocimiento del contexto. En este punto es importante recordar que Machine Learning es un *aprendizaje de máquina*, que no conoce de contextos sociales, políticos, culturales o económicos, y que, al ser humanos como somos, son los aspectos que conforman y erigen el mundo que nos rodea.
 
+En primer lugar, tilizando la información que nos proveen los EDAs de las exportaciones, las importaciones y los índices de insumos agrícolas, podemos entonces preguntarnos si es posible evaluar cómo los costos de insumos agrícolas (por ejemplo, fertilizantes o pesticidas importados) afectan las exportaciones de ciertos cultivos. El desarrollo de estos modelos se encuentra en el archivo [`ML_models.ipynb`](https://github.com/eli12gran/Datos_a_la_U/blob/main/Models/ML_models.ipynb) de la carpeta [`Models`](https://github.com/eli12gran/Datos_a_la_U/tree/main/Models) del repositorio.
+
+Teniendo en cuenta que nuestro deseo no es realizar predicciones precisas sobre lo que puede o no puede pasar con una cierta variable (en este caso el precio de las exportaciones), sino más bien observar si efectivamente existen relaciones positivas entre otras variables diferentes que están afectando el comportamiento de esta, tomamos en cuenta los resultados del coeficiente de determinación el cual nos muestra qué tan relacionadas están las variables independientes con la dependiente y vemos que con ambos modelos 8Rabdom Forest y AdaBoost) este resultado es bastante cercano a uno. 
+Los resultados obtenidos respaldan nuestra hipótesis de que las técnicas de machine learning son necesarias para modelar de manera efectiva el impacto de los precios de los insumos agrícolas en las exportaciones de cultivos. La regresión lineal tradicional no fue capaz de capturar ni siquiera en un porcentaje mínimo las relaciones complejas y no lineales entre las variables, lo que llevó a un desempeño deficiente en comparación con los modelos más sofisticados.
+
 Después del análisis exploratorio de los datos de las colocaciones para créditos agropecuarios, se encontró un gran potencial para un modelo de Machine Learning basado en series de tiempo para observar tendencias estacionales, de modo que fuera posible indicar a futuro periodos en los que se realiza la mayor cantidad de colocaciones de crédito para así llevar a cabo planeaciones de presupuesto adecuadas. Dado que se tienen datos entre 2021 y 2024, esto da como resultado una serie con datos limitados, sin embargo, se optó por usar el modelo de **Holt-Winters**, en cual permite captar tendencias estacionales en series cortas, que es justo lo que se espera obtener para estos datos. Adicionalmente, este modelo también capta tendencias generales en los datos, es decir, un aumento o diminución general, que también es posible reconocer con los datos que se están tratando. 
 
 Similarmente para el conjunto de datos de los índices relacionados con los precios agrícolas, la organización de los datos es bastante útil puesto que los índices se dividen por meses entre 2019 y 2024.
 
-La implementación de este modelo para cada conjunto de datos se encuentra en el archivo `ML_HW.ipynb`, además de los resultados obtenidos y las predicciones para los índices y créditos para el año siguiente.
-
-### 5. Interpretación de los Modelos de Machine Learning
+La implementación de este modelo para cada conjunto de datos se encuentra en el archivo [`ML_HW.ipynb`](https://github.com/eli12gran/Datos_a_la_U/blob/main/Models/Modelo_HW.ipynb), además de los resultados obtenidos y las predicciones para los índices y créditos para el año siguiente.
 
 ### 6. Integración de los EDAs y los Modelos
 
+Nuestro análisis exploratorio detallado, en conjunto con la implementación de 3 modelos de Machine Learning, reveló hallazgos significativos que apuntan a soluciones claras para cada uno de los problemas mencionados:
+
+- **Eficiencia en Importaciones y Exportaciones:** Observamos que ciertos productos, como las semillas oleaginosas y algunos productos químicos, se importan y exportan simultáneamente, lo que genera duplicación de esfuerzos y menor competitividad. Este análisis sugiere la necesidad de especialización, así como una mayor sincronización entre las políticas de importación y exportación. Aplicamos modelos avanzados de machine learning, como Random Forest y AdaBoost, que muestran con gran precisión cómo los costos de los insumos agrícolas impactan en la producción y las exportaciones. Este análisis proporciona una herramienta poderosa para ajustar estrategias comerciales y políticas de importación y exportación, evitando esta dualidad que podría afectar negativamente a la economía agrícola.
+
+- **Planificación Financiera y Asignación de Créditos:** Mediante modelos de series temporales, logramos predecir de manera precisa las colocaciones de crédito agropecuario y los precios de los insumos agrícolas, proporcionando a las entidades financieras y a los agricultores una base sólida para planificar y ajustar su inversión a futuro. Además, encontramos que solo un porcentaje mínimo de estos créditos llega a municipios de postconflicto. Este hallazgo subraya la necesidad de una política de crédito más inclusiva y de estudiar los obstáculos específicos que enfrentan estas regiones.
+
+- **Diversificación y Sostenibilidad de Plantaciones Forestales:** En el análisis de las plantaciones forestales comerciales, descubrimos que el área plantada con especies introducidas es cuatro veces mayor que la de especies nativas. Esta desproporción puede afectar la biodiversidad y la resiliencia de los ecosistemas locales. Además, el número de establecimientos forestales ha disminuido en los últimos años. Con esta información, planteamos una propuesta para que el sector forestal invierta en la reforestación con especies nativas y promueva políticas que sostengan el desarrollo de plantaciones sostenibles.
+
+- **Patrones de Producción por Cultivos:** En el análisis de la producción agrícola por departamentos, observamos un desequilibrio en la diversificación y especialización de ciertos cultivos, lo cual puede afectar la seguridad alimentaria y la autosuficiencia de la región. Identificamos tendencias de cambio en la producción que sugieren la necesidad de promover cultivos estratégicos que optimicen los recursos naturales disponibles en cada región.
+
 ---
 ## Alcance del proyecto y futuras oportunidades
-
-El mundo de los datos no tiene límites, y esperamos que con este proyecto sea posible abrir el camino para muchas otras propuestas que complementen desde diferentes frentes el objetivo general que comprende aportar al crecimiento del sector agrícola en Colombia. 
+Este proyecto aporta un impacto social positivo en varios niveles. Primero, al optimizar las políticas de importación y exportación, apoyamos la estabilidad económica y la sostenibilidad del sector agrícola. En segundo lugar, la implementación de políticas de financiamiento inclusivo en áreas de postconflicto puede transformar vidas, brindando más oportunidades para agricultores en regiones históricamente desfavorecidas. Además, el impulso a la diversificación de especies nativas en plantaciones forestales contribuye a la conservación de la biodiversidad y a la sostenibilidad ambiental.
+Por último, al utilizar técnicas de machine learning avanzadas, hemos logrado hacer predicciones sobre la disponibilidad de créditos y el costo de insumos, proporcionando a los actores del sector agrícola las herramientas para tomar decisiones informadas y reducir riesgos. En conjunto, este proyecto no solo busca resolver problemas inmediatos, sino construir un sector agrícola y forestal más resiliente y sostenible para el futuro.
