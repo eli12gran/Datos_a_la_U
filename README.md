@@ -3,7 +3,7 @@
 #### ***Autoras de la idea: Elizabeth Granda Rodríguez, Valentina Miranda Garcés***
 #### ***Facultad de Ciencias Básicas, Computación Científica, Universidad de Medellín***
 
-![Logos de GitHub](logos_github.jpg)
+![Logos de GitHub](images/logos_github.jpg)
 
 
 En el presente repositorio se presenta la idea de proyecto para el concurso Datos a la U. Participamos en la categoría de **Agricultura y Desarrollo Rural** con el proyecto que titula este documento: *Cultivando Conexiones: Estudio Integrado de las Dinámicas del Panorama Agrícola en Colombia*. 
