@@ -6,10 +6,10 @@ Similarmente para el conjunto de datos de los índices relacionados con los prec
 
 En el archivo `Modelo_HW.ipynb` dentro de esta misma carpeta se encuentra todo el desarrollo del código para la implementación de los modelos.
 
-![Proyeccion creditos](../proyeccion_colocacion.png)
+![Proyeccion creditos](../images/proyeccion_colocacion.png)
 
 Es posible observar que el modelo toma la caída de las colocaciones al inicio del año, las cuales siempre están seguidas por una considerable subida, para luego estabilizarse un poco durante la mitad del año y al final volver a tener una subida considerable. Esto da a entender que el modelo fue eficaz al momento de determinar los patrones específicos para cada mes y puede llegar a ser una herramienta valiosa al planear distribuciones de presupuesto para financiamientos del sector agropecuario.
 
 Adicionalmente, para el conjunto de datos de los índices relacionados a precios agrícolas se hizo un procedimiento similar, pero en este caso, para fines demostrativos se decidió tomar 6 índices: el índice total de los insumos, de fertilizantes, plaguicidas, herbicidas, fungicidas e insecticidas. Con cada uno se realizó una serie de tiempo y se obtuvo la proyección para el siguiente año. Con la característica de que estos índices no parecían presentar una tendencia estacionaria tan clara entre meses, de igual forma el modelo fue capaz de determinar una proyección coherente gracias al componente de tendencia que puede captar. En la siguiente imagen se encuentran las proyecciones:
 
-![Proyeccion insumos](../proyeccion_insumos.png)
+![Proyeccion insumos](../images/proyeccion_insumos.png)
