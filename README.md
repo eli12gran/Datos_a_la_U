@@ -48,6 +48,10 @@ Donde el `0.0.0` será la versión que desee.
 
 El paquete por excelencia para realizar estudios con herramientas de Machine Learning es el último mencionado en el listado anterior, es decir, `scikit-learn`. Con este paquete se lleva a cabo toda la creación e implementación del modelo, desde el preprocesamiento de los datos hasta la creación de nuevas columnas mediante *feature engineering*. `scikit-learn` incluye módulos para realizar Machine Learning supervisado y no supervisado, proporcionando todos los modelos necesarios para abordar problemas de regresión o clasificación, según lo requiera el proyecto.
 
+
+Todos los códigos presentes están escritos en el lenguaje de programación Python y se encuentran en formato de notebooks, (fueron desarrollados en Jupyter-Notebooks) específicamente en archivos con extensión .ipynb. Esto permite al usuario descargar los notebooks y ejecutarlos en diferentes entornos, como Jupyter Notebooks o Google Colab, que también son compatibles con este formato.
+
+
 ---
 ## **Metodología**
 
