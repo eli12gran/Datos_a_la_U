@@ -1,5 +1,5 @@
 # **Cultivando Conexiones: Estudio Integrado de las Dinámicas del Panorama Agrícola en Colombia**
-#### ***Facultad de Ciencias Básicas, Computación Científica, Universidad de Medellín***
+#### ***Facultad de Ciencias Básicas, Computación Científica***
 
 
 En el presente repositorio se presenta la idea de proyecto para el concurso Datos a la U. Participamos en la categoría de **Agricultura y Desarrollo Rural** con el proyecto que titula este documento: *Cultivando Conexiones: Estudio Integrado de las Dinámicas del Panorama Agrícola en Colombia*. 
